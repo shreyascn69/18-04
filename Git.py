@@ -1,65 +1,60 @@
-#  1. Reverse a String (Logic)
+# create database ooo;
 
-# Write a program to reverse a string without using slicing ([::-1]).
+# use ooo;
 
-# st = [1,2,3,4,5,6]
+# CREATE TABLE students (
+#     id INT,
+#     name VARCHAR(50),
+#     age INT,
+#     marks INT,
+#     city VARCHAR(50)
+# );
 
-# rev = []
-# for i in range(len(st)-1, -1, -1):
-#     rev.append(st[i])
-
-# print(rev)
-
-
-
-# ss = int(input())
-
-# for i in range(2, ss):
-#     if ss%i ==0:
-#         print(ss, "prime number")
-#         break
-# else:
-#     print(ss, "not a prime number")
-
-
-#  3. Output Prediction
-# def func(a, b=[]):
-#     b.append(a)
-#     return b
-
-# print(func(1))
-# print(func(2))
-#  Output:
-# [1]
-# [1, 2]
+# insert into students(id, name, age, marks, city)
+# values
+# (1, "Rahul", 20, 85, "Banglore"),
+# (2, "shreyas", 25, 89, "Mumbai"),
+# (3, "ganesh", 21, 99, "kolkatta"),
+# (5,"Anjali", 19, null, "Mysure");
+# select * from students
+# -- where city = "banglore" 
+# -- where age<20
+# -- where marks between 70 and 90
+# where age<29
+# limit 2
 
 
 
-#  4. Second Largest Number (Without sort)
-# st = [10, 20, 4, 45, 99]
+# create database if not exists mmm;
+# use mmm;
 
-# first = second = -float('inf')
+# DROP TABLE IF EXISTS student;
 
-# for i in st:
-#     if i > first:
-#         second = first
-#         first = i
-#     elif i > second and i != first:
-#         second = i
+# CREATE TABLE student (
+#     id INT,
+#     name VARCHAR(50),
+#     age INT,
+#     marks INT,
+#     city VARCHAR(50)
+# );
 
-# print("Second largest:", second)
+# INSERT INTO student VALUES
+# (1, "Rahul", 20, 85, "Bangalore"),
+# (2, "Shreyas", 25, 89, "Mumbai"),
+# (3, "Ganesh", 21, 99, "Kolkata"),
+# (4, "Anjali", 19, NULL, "Mysore"),
+# (5, "Ravi", 22, 70, "Bangalore"),
+# (6, "Sneha", 23, 60, "Delhi"),
+# (7, "Kiran", 20, 75, "Mumbai"),
+# (8, "Pooja", 21, 82, "Bangalore"),
+# (9, "Amit", 24, 91, "Delhi"),
+# (10, "Neha", 22, 68, "Mysore");
 
-# 5. Character Frequency
-# st = "aabbc"
+# -- select max(marks)
+# -- from student
 
-# freq = {}
+# -- select min(marks)
+# -- from student
 
-# for ch in st:
-#     if ch in freq:
-#         freq[ch] += 1
-#     else:
-#         freq[ch] = 1
-
-# print(freq)
-#  Output:
-# {'a': 2, 'b': 2, 'c': 1}
+# -- select marks from student
+# -- order by marks desc;
