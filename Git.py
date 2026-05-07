@@ -2,8 +2,9 @@
 
 # use ooo;
 
-# CREATE TABLE students (
+# CREATE TABLE students (      
 #     id INT,
+#     roll no INT,
 #     name VARCHAR(50),
 #     age INT,
 #     marks INT,
